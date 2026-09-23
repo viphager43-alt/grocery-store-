@@ -1,1 +1,1105 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>محل حباش حمدي - بقالة ومأكولات طازجة | habashhamdi.com</title>
+  <meta name="description" content="الموقع الرسمي لمحل حباش حمدي على habashhamdi.com: حباش دمنهوري، سلطة تونة، سلطة رنجة، جبنة بالطماطم وبقالة شاملة مع خدمة التوصيل السريع.">
+  <meta name="keywords" content="حباش حمدي, حباش دمنهوري, سلطة تونة, سلطة رنجة, بقالة, توصيل طلبات, habashhamdi">
+  <meta name="author" content="محل حباش حمدي">
 
+  <!-- ✅ الدومين الرسمي -->
+  <link rel="canonical" href="https://habashhamdi.com/">
+
+  <!-- ✅ Open Graph (فيسبوك / واتساب) -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://habashhamdi.com/">
+  <meta property="og:site_name" content="محل حباش حمدي">
+  <meta property="og:title" content="محل حباش حمدي - بقالة ومأكولات طازجة">
+  <meta property="og:description" content="أشهى الحباش الدمنهوري وسلطات التونة والرنجة مع بقالة شاملة وتوصيل سريع. اطلب الآن من habashhamdi.com">
+  <meta property="og:image" content="https://habashhamdi.com/og-image.jpg">
+  <meta property="og:locale" content="ar_EG">
+
+  <!-- ✅ Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://habashhamdi.com/">
+  <meta name="twitter:title" content="محل حباش حمدي - بقالة ومأكولات طازجة">
+  <meta name="twitter:description" content="أشهى الحباش الدمنهوري وسلطات التونة والرنجة مع بقالة شاملة وتوصيل سريع.">
+  <meta name="twitter:image" content="https://habashhamdi.com/og-image.jpg">
+
+  <!-- ✅ Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23d97706'/><text x='50' y='72' font-size='65' font-weight='bold' text-anchor='middle' fill='white' font-family='Arial'>ح</text></svg>">
+
+  <!-- ✅ Structured Data (بيانات منظمة لجوجل) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "GroceryStore",
+    "name": "محل حباش حمدي",
+    "url": "https://habashhamdi.com/",
+    "logo": "https://habashhamdi.com/logo.png",
+    "image": "https://habashhamdi.com/og-image.jpg",
+    "description": "محل بقالة ومأكولات طازجة متخصص في الحباش الدمنهوري وسلطات التونة والرنجة مع خدمة توصيل سريع.",
+    "telephone": "+201002478899",
+    "priceRange": "$$",
+    "servesCuisine": "مأكولات مصرية شعبية",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "EG",
+      "addressLocality": "دمنهور"
+    },
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+      "opens": "07:00",
+      "closes": "23:00"
+    }],
+    "sameAs": ["https://habashhamdi.com/"]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { font-family: 'Cairo', sans-serif; background-color: #fbf9f5; }
+    .custom-scroll::-webkit-scrollbar { width: 6px; }
+    .custom-scroll::-webkit-scrollbar-thumb { background-color: #d1d5db; border-radius: 9999px; }
+  </style>
+</head>
+<body class="text-stone-800 antialiased selection:bg-amber-500 selection:text-white pb-28 sm:pb-16">
+
+  <div id="adminTopBar" class="hidden bg-emerald-700 text-white px-4 py-2.5 shadow-md sticky top-0 z-40">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2 text-xs">
+      <div class="flex items-center gap-2">
+        <span class="text-lg">👑</span>
+        <span class="font-black text-sm">وضع إدارة المحل مفعّل (المعلم حمدي)</span>
+        <span class="bg-emerald-900/60 text-emerald-200 px-2 py-0.5 rounded-full text-[10px]">صلاحيات حصرية</span>
+      </div>
+      <div class="flex items-center gap-2">
+        <button onclick="openAdminDashboard('products')" class="bg-white text-emerald-900 font-bold px-3 py-1 rounded-lg hover:bg-emerald-50 transition cursor-pointer flex items-center gap-1 shadow-sm">
+          <span>📊 لوحة التحكم الشاملة</span>
+        </button>
+        <button onclick="openAdminDashboard('add')" class="bg-amber-400 text-stone-900 font-black px-3 py-1 rounded-lg hover:bg-amber-300 transition cursor-pointer flex items-center gap-1 shadow-sm">
+          <span>➕ إضافة سلعة جديدة</span>
+        </button>
+        <button onclick="adminLogout()" class="bg-emerald-900 hover:bg-black text-emerald-100 px-2.5 py-1 rounded-lg transition cursor-pointer">
+          🚪 خروج من الإدارة
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-amber-600 text-white text-xs py-2 px-4 text-center font-bold flex items-center justify-between sm:justify-center gap-4">
+    <div class="flex items-center gap-1.5">
+      <span>🛵</span>
+      <span>خدمة التوصيل السريع متاحة الآن! اطلب واستلم طازج وفوري</span>
+    </div>
+    <div class="flex items-center gap-2">
+      <span class="hidden sm:inline bg-amber-700/80 px-2.5 py-0.5 rounded-full" id="displayStorePhone">الخط الساخن: 0100-247-8899</span>
+    </div>
+  </div>
+
+  <header class="bg-white/95 backdrop-blur-md border-b border-stone-200 shadow-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-3.5 flex items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <button onclick="handleLogoSecretClick()" class="w-12 h-12 rounded-2xl bg-gradient-to-br from-amber-500 to-amber-700 flex items-center justify-center text-white font-black text-2xl shadow-md shadow-amber-500/20 cursor-pointer select-none" title="محل حباش حمدي">
+          ح
+        </button>
+        <div>
+          <h1 class="text-xl sm:text-2xl font-black text-stone-900 tracking-tight" id="displayStoreName">محل حباش حمدي</h1>
+          <p class="text-xs text-amber-700 font-bold">أصل الحباش الدمنهوري وسلطات التونة والرنجة وبقالة البيت</p>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-3">
+        <button onclick="toggleCartDrawer()" class="relative flex items-center gap-2.5 bg-stone-900 hover:bg-stone-800 text-white px-4 py-2.5 rounded-2xl shadow-md transition-transform active:scale-95 cursor-pointer">
+          <span class="text-lg">🛒</span>
+          <span class="hidden sm:inline font-bold text-xs">سلة الطلبات</span>
+          <span id="cartBadgeCount" class="bg-amber-500 text-stone-950 font-black text-xs px-2 py-0.5 rounded-full">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 pt-6 pb-4">
+    <div class="relative overflow-hidden rounded-3xl bg-gradient-to-br from-stone-900 via-stone-800 to-amber-950 text-white p-6 sm:p-10 shadow-xl border border-stone-800">
+      <div class="relative z-10 max-w-2xl">
+        <div class="inline-flex items-center gap-2 bg-amber-500/20 border border-amber-400/30 text-amber-300 text-xs px-3 py-1 rounded-full font-bold mb-3">
+          <span>✨</span> أشهى الوجبات الشعبية الحرشة وبقالة طازجة
+        </div>
+        <h2 class="text-2xl sm:text-4xl font-black leading-tight mb-2">
+          طلبك واصل لحد باب بيتك سخن وطازة
+        </h2>
+        <p class="text-stone-300 text-xs sm:text-sm leading-relaxed mb-6">
+          أطباق الحباش الأصلية بالخلطة والسر، سلطات التونة والرنجة المخلية، الجبنة بالطماطم وزيت الزيتون، وجميع أصناف البقالة والألبان بأسعار يومية مميزة.
+        </p>
+        <div class="flex flex-wrap items-center gap-3">
+          <a href="#dishes-section" class="bg-amber-500 hover:bg-amber-600 text-stone-950 font-black text-xs sm:text-sm px-5 py-2.5 rounded-xl shadow-lg transition-transform active:scale-95">
+            🍲 وجبات حباش حمدي
+          </a>
+          <a href="#grocery-section" class="bg-stone-800 hover:bg-stone-700 text-white font-bold text-xs sm:text-sm px-5 py-2.5 rounded-xl border border-stone-700 transition-colors">
+            🧀 تصفح منتجات البقالة
+          </a>
+        </div>
+      </div>
+      <div class="absolute -left-10 -bottom-10 opacity-20 sm:opacity-30 text-9xl pointer-events-none">
+        🥗
+      </div>
+    </div>
+  </section>
+
+  <section id="dishes-section" class="max-w-7xl mx-auto px-4 sm:px-6 py-6">
+    <div class="flex items-center justify-between mb-4">
+      <div>
+        <h3 class="text-xl sm:text-2xl font-black text-stone-900 flex items-center gap-2">
+          <span>🥗</span> وجبات وسلطات حباش حمدي الحرشة
+        </h3>
+        <p class="text-xs text-stone-500">جاهزة فوراً على الطلب مع عيش بلدي سخن وتتبيلة حسب اختيارك</p>
+      </div>
+      <div class="flex items-center gap-2">
+        <button onclick="openAdminDashboard('add', 'dishes')" id="adminAddDishBtn" class="hidden bg-amber-600 hover:bg-amber-700 text-white text-xs font-bold px-3 py-1.5 rounded-xl shadow-xs transition cursor-pointer">
+          ➕ أضف وجبة جديدة
+        </button>
+        <span class="bg-amber-100 text-amber-800 text-xs font-bold px-3 py-1 rounded-full">شغل اليوم صابح</span>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4" id="preparedDishesGrid"></div>
+  </section>
+
+  <section id="grocery-section" class="max-w-7xl mx-auto px-4 sm:px-6 py-6">
+    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-4">
+      <div>
+        <h3 class="text-xl sm:text-2xl font-black text-stone-900 flex items-center gap-2">
+          <span>🛒</span> جميع أصناف البقالة اليومية
+        </h3>
+        <p class="text-xs text-stone-500">أجبان، ألبان، زيوت، تونة، معلبات، مخبوزات، وعطارة طازجة</p>
+      </div>
+      
+      <div class="flex items-center gap-2 w-full sm:w-auto">
+        <button onclick="openAdminDashboard('add', 'grocery')" id="adminAddGroceryBtn" class="hidden shrink-0 bg-stone-900 hover:bg-black text-amber-400 text-xs font-bold px-3 py-2 rounded-xl transition cursor-pointer">
+          ➕ أضف سلعة بقالة
+        </button>
+        <div class="relative flex-1 sm:w-72">
+          <input 
+            type="text" 
+            id="grocerySearchInput" 
+            onkeyup="filterGrocery()"
+            placeholder="ابحث عن صنف بقالة..." 
+            class="w-full bg-white border border-stone-200 rounded-xl px-4 py-2 text-xs text-stone-900 focus:outline-none focus:ring-2 focus:ring-amber-500/20 shadow-xs"
+          >
+          <span class="absolute left-3 top-2 text-stone-400 text-sm">🔍</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3" id="groceryGrid"></div>
+  </section>
+
+  <div id="cartDrawerOverlay" class="fixed inset-0 z-50 bg-black/60 backdrop-blur-xs hidden transition-opacity flex justify-end">
+    <div class="w-full max-w-md bg-white h-full flex flex-col shadow-2xl">
+      <div class="bg-stone-900 text-white p-4 flex items-center justify-between">
+        <div class="flex items-center gap-2">
+          <span class="text-xl">🛒</span>
+          <div>
+            <h4 class="font-black text-sm">سلة طلباتك</h4>
+            <p id="drawerItemCountText" class="text-[11px] text-stone-400">0 صنف محدد</p>
+          </div>
+        </div>
+        <button onclick="toggleCartDrawer()" class="text-stone-400 hover:text-white p-1 text-lg">✕</button>
+      </div>
+
+      <div class="flex-1 overflow-y-auto p-4 space-y-3" id="cartItemsList"></div>
+
+      <div class="border-t border-stone-200 p-4 bg-stone-50 space-y-3">
+        <div>
+          <label class="block text-xs font-bold text-stone-700 mb-1">اسم العميل:</label>
+          <input type="text" id="orderCustomerName" placeholder="أدخل اسمك الكريم" class="w-full bg-white border border-stone-300 rounded-xl px-3 py-1.5 text-xs text-stone-900">
+        </div>
+        <div>
+          <label class="block text-xs font-bold text-stone-700 mb-1">رقم الهاتف / الواتساب:</label>
+          <input type="tel" id="orderCustomerPhone" placeholder="مثال: 01012345678" class="w-full bg-white border border-stone-300 rounded-xl px-3 py-1.5 text-xs text-stone-900">
+        </div>
+        <div>
+          <label class="block text-xs font-bold text-stone-700 mb-1">عنوان التوصيل:</label>
+          <input type="text" id="orderCustomerAddress" placeholder="المنطقة، الشارع، رقم العمارة والشقة" class="w-full bg-white border border-stone-300 rounded-xl px-3 py-1.5 text-xs text-stone-900">
+        </div>
+        
+        <div class="flex justify-between items-center text-sm font-black pt-2 border-t border-stone-200">
+          <span>الإجمالي المطلوب:</span>
+          <span id="cartGrandTotal" class="text-amber-700 text-lg font-black">0 ج.م</span>
+        </div>
+
+        <button onclick="sendOrderViaWhatsApp()" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 rounded-xl flex items-center justify-center gap-2 text-xs shadow-md transition-all active:scale-98 cursor-pointer">
+          <span>📱</span>
+          <span>إرسال الطلب مباشر عبر الواتساب</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div id="adminLoginModal" class="fixed inset-0 z-50 bg-black/70 backdrop-blur-xs hidden items-center justify-center p-4">
+    <div class="bg-white rounded-3xl p-6 max-w-sm w-full shadow-2xl border border-stone-200">
+      <div class="flex items-center justify-between mb-4">
+        <div class="flex items-center gap-2">
+          <span class="w-9 h-9 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center text-lg">🔐</span>
+          <div>
+            <h4 class="font-black text-stone-900 text-base">دخول إدارة المحل</h4>
+            <p class="text-[11px] text-stone-500">خاص بالمعلم حمدي</p>
+          </div>
+        </div>
+        <button onclick="toggleAdminLoginModal(false)" class="text-stone-400 hover:text-stone-700 font-bold p-1">✕</button>
+      </div>
+      
+      <p class="text-xs text-stone-600 mb-3">أدخل رمز الدخول السري للتحكم في الأسعار والسلع:</p>
+      
+      <form onsubmit="handleAdminLogin(event)">
+        <input 
+          type="password" 
+          id="adminPinInput" 
+          placeholder="••••" 
+          maxlength="8"
+          class="w-full border border-stone-300 focus:border-amber-600 rounded-xl px-4 py-2.5 text-center text-xl tracking-widest font-mono mb-2 focus:ring-2 focus:ring-amber-500/20"
+        >
+        
+        <div id="adminPinError" class="text-xs text-red-600 font-bold mb-3 hidden bg-red-50 p-2 rounded-lg border border-red-200">
+          ❌ الرمز السري غير صحيح!
+        </div>
+
+        <div class="flex items-center gap-2 mt-4">
+          <button type="button" onclick="toggleAdminLoginModal(false)" class="flex-1 bg-stone-100 hover:bg-stone-200 text-stone-700 font-bold py-2.5 rounded-xl text-xs">
+            إلغاء
+          </button>
+          <button type="submit" class="flex-1 bg-amber-600 hover:bg-amber-700 text-white font-bold py-2.5 rounded-xl text-xs shadow-md">
+            تأكيد الدخول
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div id="adminDashboardModal" class="fixed inset-0 z-50 bg-black/70 backdrop-blur-xs hidden items-center justify-center p-3 sm:p-5">
+    <div class="bg-white rounded-3xl w-full max-w-4xl max-h-[90vh] flex flex-col shadow-2xl border border-stone-200 overflow-hidden">
+      
+      <div class="bg-stone-900 text-white p-4 sm:p-5 flex items-center justify-between border-b border-stone-800">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-xl bg-amber-500 text-stone-950 flex items-center justify-center font-black text-xl">
+            👑
+          </div>
+          <div>
+            <h3 class="text-base sm:text-lg font-black font-['Cairo']">لوحة تحكم إدارة محل حباش حمدي</h3>
+            <p class="text-xs text-amber-400">تحكم كامل في الأسعار، السلع، طرق الدفع، والإعدادات</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-2">
+          <button onclick="adminLogout()" class="text-xs bg-red-900/80 hover:bg-red-800 text-red-200 px-3 py-1.5 rounded-xl transition cursor-pointer">
+            تسجيل خروج
+          </button>
+          <button onclick="closeAdminDashboard()" class="text-stone-400 hover:text-white p-1 text-lg cursor-pointer">✕</button>
+        </div>
+      </div>
+
+      <div class="flex border-b border-stone-200 bg-stone-50 px-4 pt-3 gap-2 overflow-x-auto text-xs font-bold">
+        <button onclick="switchAdminTab('products')" id="tabBtn-products" class="px-4 py-2 rounded-t-xl bg-white text-stone-900 border-t-2 border-amber-600 shadow-xs cursor-pointer">
+          📋 إدارة السلع والأسعار (<span id="totalAdminItemsCount">0</span>)
+        </button>
+        <button onclick="switchAdminTab('add')" id="tabBtn-add" class="px-4 py-2 rounded-t-xl text-stone-500 hover:text-stone-900 cursor-pointer">
+          ➕ إضافة سلعة جديدة
+        </button>
+        <button onclick="switchAdminTab('payments')" id="tabBtn-payments" class="px-4 py-2 rounded-t-xl text-stone-500 hover:text-stone-900 cursor-pointer">
+          💳 طرق الدفع والتحويل
+        </button>
+        <button onclick="switchAdminTab('settings')" id="tabBtn-settings" class="px-4 py-2 rounded-t-xl text-stone-500 hover:text-stone-900 cursor-pointer">
+          ⚙️ إعدادات المحل والأمان
+        </button>
+      </div>
+
+      <div class="flex-1 overflow-y-auto p-4 sm:p-6 custom-scroll">
+        
+        <div id="adminTabContent-products" class="space-y-4">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 bg-amber-50 p-3 rounded-2xl border border-amber-200 text-xs">
+            <div class="text-amber-950 font-bold">
+              💡 يمكنك تعديل سعر أي سلعة مباشرة والضغط على زر "حفظ"، أو تغيير حالتها لمتاح/نفد من المخزون.
+            </div>
+            <div class="flex items-center gap-2">
+              <button onclick="switchAdminTab('add')" class="bg-amber-600 hover:bg-amber-700 text-white font-bold px-3 py-1.5 rounded-xl cursor-pointer">
+                ➕ إضافة صنف جديد
+              </button>
+              <button onclick="resetAllProductsToDefaults()" class="bg-white text-stone-700 hover:text-red-700 border border-stone-300 font-bold px-3 py-1.5 rounded-xl cursor-pointer">
+                🔄 استعادة القائمة الأصلية
+              </button>
+            </div>
+          </div>
+
+          <input 
+            type="text" 
+            id="adminSearchInput" 
+            onkeyup="filterAdminProductsTable()" 
+            placeholder="🔍 ابحث في سلع المحل بالاسم لتعديل سعرها..." 
+            class="w-full bg-white border border-stone-300 rounded-xl px-4 py-2 text-xs"
+          >
+
+          <div class="overflow-x-auto border border-stone-200 rounded-2xl shadow-xs">
+            <table class="w-full text-right text-xs">
+              <thead class="bg-stone-100 text-stone-700 border-b border-stone-200">
+                <tr>
+                  <th class="p-3">السلعة</th>
+                  <th class="p-3">القسم</th>
+                  <th class="p-3">السعر الحالي (ج.م)</th>
+                  <th class="p-3">الحالة</th>
+                  <th class="p-3 text-center">الإجراءات</th>
+                </tr>
+              </thead>
+              <tbody id="adminProductsTableBody" class="divide-y divide-stone-200"></tbody>
+            </table>
+          </div>
+        </div>
+
+        <div id="adminTabContent-add" class="hidden max-w-lg mx-auto space-y-4 text-xs">
+          <div class="bg-white border border-stone-200 rounded-2xl p-5 space-y-3 shadow-xs">
+            <h4 class="font-black text-sm text-stone-900 border-b border-stone-200 pb-2 flex items-center gap-1.5">
+              <span>➕</span> إضافة صنف جديد لموقع حباش حمدي
+            </h4>
+
+            <div>
+              <label class="font-bold text-stone-700 block mb-1">اسم السلعة أو الوجبة *:</label>
+              <input type="text" id="newProdName" placeholder="مثال: طبق حباش دبل، جبنة رومي بطارخ..." class="w-full border border-stone-300 rounded-xl px-3 py-2 text-xs">
+            </div>
+
+            <div class="grid grid-cols-2 gap-3">
+              <div>
+                <label class="font-bold text-stone-700 block mb-1">السعر (جنيه مصري) *:</label>
+                <input type="number" id="newProdPrice" placeholder="مثال: 45" class="w-full border border-stone-300 rounded-xl px-3 py-2 text-xs font-mono font-bold">
+              </div>
+              <div>
+                <label class="font-bold text-stone-700 block mb-1">القسم *:</label>
+                <select id="newProdCategory" class="w-full border border-stone-300 rounded-xl px-3 py-2 text-xs">
+                  <option value="dishes">وجبات وسلطات حباش حمدي 🥗</option>
+                  <option value="grocery">أصناف البقالة والألبان 🧀</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-2 gap-3">
+              <div>
+                <label class="font-bold text-stone-700 block mb-1">الوصف أو الوحدة:</label>
+                <input type="text" id="newProdUnit" placeholder="مثال: طبق عائلي، كيلو، علبة..." class="w-full border border-stone-300 rounded-xl px-3 py-2 text-xs">
+              </div>
+              <div>
+                <label class="font-bold text-stone-700 block mb-1">أيقونة أو إيموجي:</label>
+                <input type="text" id="newProdEmoji" value="🥗" class="w-full border border-stone-300 rounded-xl px-3 py-2 text-xs text-center text-lg">
+              </div>
+            </div>
+
+            <div>
+              <label class="font-bold text-stone-700 block mb-1">وصف مختصر أو المكونات:</label>
+              <textarea id="newProdDesc" rows="2" placeholder="خلطة مخصوصة، بهارات، زيت حار..." class="w-full border border-stone-300 rounded-xl px-3 py-2 text-xs"></textarea>
+            </div>
+
+            <button onclick="saveNewProductFromAdmin()" class="w-full bg-amber-600 hover:bg-amber-700 text-white font-bold py-3 rounded-xl text-xs shadow-md transition cursor-pointer">
+              حفظ وإضافة السلعة للموقع فوراً
+            </button>
+          </div>
+        </div>
+
+        <div id="adminTabContent-payments" class="hidden max-w-xl mx-auto space-y-4 text-xs">
+          <div class="bg-white border border-stone-200 rounded-2xl p-5 space-y-4 shadow-xs">
+            <h4 class="font-black text-sm text-stone-900 border-b border-stone-200 pb-2 flex items-center gap-1.5">
+              <span>💳</span> ضبط طرق الدفع وأرقام التحويل
+            </h4>
+            <p class="text-stone-500">هذه البيانات تظهر للزبائن عند تأكيد طلباتهم:</p>
+
+            <div class="space-y-3" id="adminPaymentMethodsList"></div>
+
+            <button onclick="savePaymentSettings()" class="w-full bg-stone-900 hover:bg-black text-white font-bold py-2.5 rounded-xl text-xs transition cursor-pointer">
+              حفظ بيانات طرق الدفع
+            </button>
+          </div>
+        </div>
+
+        <div id="adminTabContent-settings" class="hidden max-w-lg mx-auto space-y-4 text-xs">
+          <div class="bg-white border border-stone-200 rounded-2xl p-5 space-y-4 shadow-xs">
+            <h4 class="font-black text-sm text-stone-900 border-b border-stone-200 pb-2 flex items-center gap-1.5">
+              <span>⚙️</span> إعدادات المحل ورمز الدخول السري
+            </h4>
+
+            <div>
+              <label class="font-bold text-stone-700 block mb-1">اسم المحل:</label>
+              <input type="text" id="settingStoreName" class="w-full border border-stone-300 rounded-xl px-3 py-2 text-xs">
+            </div>
+
+            <div>
+              <label class="font-bold text-stone-700 block mb-1">رقم هاتف المحل للتواصل:</label>
+              <input type="text" id="settingStorePhone" class="w-full border border-stone-300 rounded-xl px-3 py-2 text-xs font-mono">
+            </div>
+
+            <div>
+              <label class="font-bold text-stone-700 block mb-1">رقم الواتساب لاستقبال الطلبات:</label>
+              <input type="text" id="settingWhatsappNumber" class="w-full border border-stone-300 rounded-xl px-3 py-2 text-xs font-mono">
+            </div>
+
+            <div class="bg-amber-50 border border-amber-200 rounded-xl p-3">
+              <label class="font-bold text-amber-900 block mb-1">🌐 الدومين الرسمي للموقع:</label>
+              <div class="flex items-center gap-2">
+                <span class="text-xs font-mono font-bold text-amber-900 bg-white border border-amber-300 rounded-lg px-3 py-1.5 flex-1 text-center">habashhamdi.com</span>
+                <a href="https://habashhamdi.com/" target="_blank" class="bg-amber-600 hover:bg-amber-700 text-white text-[11px] font-bold px-3 py-1.5 rounded-lg transition">🔗 زيارة</a>
+              </div>
+              <span class="text-[10px] text-amber-700 block mt-1">الدومين مدمج في الكود (canonical + Open Graph + Structured Data).</span>
+            </div>
+
+            <div class="pt-3 border-t border-stone-200">
+              <label class="font-bold text-amber-900 block mb-1">🔒 تغيير رمز الدخول السري (PIN):</label>
+              <input type="text" id="settingAdminPin" maxlength="8" class="w-full border border-amber-300 bg-amber-50 rounded-xl px-3 py-2 text-xs font-mono font-black tracking-widest text-center text-base">
+              <span class="text-[10px] text-stone-400 block mt-1">احفظ هذا الرمز جيداً لاستخدامه في الدخول السري.</span>
+            </div>
+
+            <button onclick="saveStoreSettingsFromAdmin()" class="w-full bg-amber-600 hover:bg-amber-700 text-white font-bold py-2.5 rounded-xl text-xs shadow-md transition cursor-pointer">
+              حفظ جميع الإعدادات
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="bg-stone-100 border-t border-stone-200 p-3 px-6 flex items-center justify-between text-xs text-stone-500">
+        <span>كافة التغييرات تُحفظ تلقائياً في المتصفح</span>
+        <button onclick="closeAdminDashboard()" class="bg-stone-900 hover:bg-black text-white px-4 py-1.5 rounded-xl font-bold cursor-pointer">
+          إغلاق اللوحة والرجوع للموقع
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="bg-stone-900 text-stone-300 pt-10 pb-6 px-4 mt-16 border-t border-stone-800">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-stone-400">
+      <div>
+        <p class="font-black text-white text-base" id="footerStoreName">محل حباش حمدي</p>
+        <p>أصل الحباش الدمنهوري وسلطات التونة والرنجة وبقالة البيت</p>
+        <p class="mt-1">🌐 الموقع الرسمي: <a href="https://habashhamdi.com/" class="text-amber-400 font-mono hover:underline">habashhamdi.com</a></p>
+      </div>
+      <div class="text-center sm:text-left flex flex-col sm:items-end gap-1">
+        <p>الخط الساخن: <strong class="text-emerald-400 font-mono" id="footerPhone">0100-247-8899</strong></p>
+        <p>
+          جميع الحقوق محفوظة © <span id="currentYear"></span> - habashhamdi.com
+          <span onclick="triggerSecretAdmin()" class="opacity-10 hover:opacity-100 cursor-pointer select-none text-[10px] text-amber-500 mr-1">•</span>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function esc(str) {
+      return String(str ?? '').replace(/[&<>"']/g, function(c) {
+        return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
+      });
+    }
+
+    function loadJSON(key, fallback) {
+      try {
+        const raw = localStorage.getItem(key);
+        if (!raw) return fallback;
+        const parsed = JSON.parse(raw);
+        return (parsed === null || parsed === undefined) ? fallback : parsed;
+      } catch (err) {
+        console.warn('⚠️ بيانات تالفة في المفتاح:', key, err);
+        return fallback;
+      }
+    }
+
+    document.getElementById('currentYear').innerText = new Date().getFullYear();
+
+    const INITIAL_DISHES = [
+      { id: 'h1', name: 'طبق حباش دمنهوري أصلي بالزيت الحار', price: 35, unit: 'طبق مخصوص', category: 'dishes', emoji: '🥗', inStock: true, desc: 'الحباش البحراوي الأصلي بالخلطة المخصوصة والبهارات والليمون والزيت الحار' },
+      { id: 'h2', name: 'سلطة تونة قطع سوبر بالذرة والخضار', price: 65, unit: 'طبق عائلي', category: 'dishes', emoji: '🐟', inStock: true, desc: 'تونة قطع خفيفة ومتبلة مع الذرة الحلوة والفلفل الملون وزيت الزيتون' },
+      { id: 'h3', name: 'سلطة رنجة مدخنة ومخلية بالطحينة', price: 60, unit: 'طبق فاخر', category: 'dishes', emoji: '🐠', inStock: true, desc: 'رنجة هولندي سوبر مخلية بدون شوك مع الطحينة البيور والليمون والبصل' },
+      { id: 'h4', name: 'سلطة جبنة بيضاء بالطماطم والنعناع', price: 30, unit: 'طبق عائلي', category: 'dishes', emoji: '🧀', inStock: true, desc: 'جبنة براميلي فلاحي مفرومة مع الطماطم الطازجة والنعناع الأخضر وزيت الزيتون' },
+      { id: 'h5', name: 'سلطة مش فلاحي قديم بالخيار والطحينة', price: 25, unit: 'طبق ريفي', category: 'dishes', emoji: '🌶️', inStock: true, desc: 'مش مصري قديم معتق مهدأ بالطحينة والطماطم والخيار وزيت الذرة' },
+      { id: 'h6', name: 'عرض كومبو ملوك الحباش (وجبة عائلية)', price: 165, unit: '4 أطباق + 10 عيش', category: 'dishes', emoji: '👑', inStock: true, desc: 'طبق حباش + سلطة تونة + سلطة رنجة + جبنة طماطم + 10 عيش سخن' },
+    ];
+
+    const INITIAL_GROCERY = [
+      { id: 'g1', name: 'جبنة براميلي فلاحي باللبن الطبيعي', price: 160, unit: 'كيلو', category: 'grocery', emoji: '🧀', inStock: true },
+      { id: 'g2', name: 'جبنة رومي قديمة فاخرة بطارخ', price: 280, unit: 'كيلو', category: 'grocery', emoji: '🧀', inStock: true },
+      { id: 'g3', name: 'جبنة موتزاريلا طبيعي مبشورة', price: 120, unit: 'نصف كيلو', category: 'grocery', emoji: '🧀', inStock: true },
+      { id: 'g4', name: 'علبة تونة صن شاين قطع سهلة الفتح', price: 55, unit: 'علبة 185 جم', category: 'grocery', emoji: '🐟', inStock: true },
+      { id: 'g5', name: 'زيت زيتون بكر ممتاز معصور بارد', price: 180, unit: 'زجاجة 500 مل', category: 'grocery', emoji: '🫒', inStock: true },
+      { id: 'g6', name: 'زيت حار بلدي معتق (بذرة كتان)', price: 45, unit: 'زجاجة 250 مل', category: 'grocery', emoji: '🍾', inStock: true },
+      { id: 'g7', name: 'طحينة سمسم بيضاء بيور فاخرة', price: 80, unit: 'نصف كيلو', category: 'grocery', emoji: '🥣', inStock: true },
+      { id: 'g8', name: 'لبن حليب جاموسي بلدي طازج', price: 38, unit: 'كيلو معبأ', category: 'grocery', emoji: '🥛', inStock: true },
+      { id: 'g9', name: 'بيض مزارع أحمر طازج كبير', price: 165, unit: 'كرتونة 30 بيضة', category: 'grocery', emoji: '🥚', inStock: true },
+      { id: 'g10', name: 'رغيف عيش بلدي سخن مقمر', price: 2, unit: 'رغيف طازة', category: 'grocery', emoji: '🫓', inStock: true },
+      { id: 'g11', name: 'شاي العروسة أسود فاخر أصلي', price: 35, unit: 'باكت 250 جم', category: 'grocery', emoji: '☕', inStock: true },
+      { id: 'g12', name: 'سكر أبيض بلوري ناعم', price: 35, unit: 'كيس 1 كيلو', category: 'grocery', emoji: '🧂', inStock: true },
+      { id: 'g13', name: 'أرز مصري حبة رفيعة عالي الجودة', price: 32, unit: 'كيلو معبأ', category: 'grocery', emoji: '🍚', inStock: true },
+      { id: 'g14', name: 'مكرونة الملكة تشكيلة متنوعة', price: 14, unit: 'كيس 400 جم', category: 'grocery', emoji: '🍝', inStock: true },
+      { id: 'g15', name: 'زيت طعام قلية وذرة كريستال', price: 75, unit: 'زجاجة 800 مل', category: 'grocery', emoji: '🌻', inStock: true },
+    ];
+
+    const DATA_VERSION = 3;
+
+    let products = loadJSON('hh_products', null);
+    const savedVersion = loadJSON('hh_version', 0);
+
+    if (!Array.isArray(products) || savedVersion !== DATA_VERSION) {
+      products = [...INITIAL_DISHES, ...INITIAL_GROCERY];
+      localStorage.setItem('hh_products', JSON.stringify(products));
+      localStorage.setItem('hh_version', DATA_VERSION);
+    }
+
+    let storeSettings = loadJSON('hh_settings', null) || {
+      storeName: 'محل حباش حمدي',
+      phone: '0100-247-8899',
+      whatsappNumber: '201002478899',
+      adminPin: '1234',
+      domain: 'habashhamdi.com',
+    };
+    storeSettings = Object.assign({
+      storeName: 'محل حباش حمدي',
+      phone: '0100-247-8899',
+      whatsappNumber: '201002478899',
+      adminPin: '1234',
+      domain: 'habashhamdi.com',
+    }, storeSettings);
+
+    let paymentMethods = loadJSON('hh_payments', null) || [
+      { id: 'cash', name: 'كاش عند الاستلام', details: 'الدفع نقداً للمندوب عند وصول الطلب', enabled: true },
+      { id: 'instapay', name: 'إنستاباي (InstaPay)', details: 'تحويل على: hamdy@instapay أو رقم 01002478899', enabled: true },
+      { id: 'vodafone', name: 'فودافون كاش / محافظ إلكترونية', details: 'تحويل كاش على الرقم: 01002478899', enabled: true },
+    ];
+
+    let isAdminLoggedIn = sessionStorage.getItem('hh_is_admin') === 'true';
+    let cart = loadJSON('hh_cart', []);
+    let currentAdminFilter = '';
+
+    function checkSecretUrlTrigger() {
+      const urlParams = new URLSearchParams(window.location.search);
+      if (urlParams.has('admin') || window.location.hash === '#admin') {
+        if (isAdminLoggedIn) openAdminDashboard('products');
+        else toggleAdminLoginModal(true);
+      }
+    }
+
+    let logoClickCount = 0;
+    let logoClickTimer = null;
+    function handleLogoSecretClick() {
+      if (isAdminLoggedIn) { openAdminDashboard('products'); return; }
+      logoClickCount++;
+      clearTimeout(logoClickTimer);
+      logoClickTimer = setTimeout(() => { logoClickCount = 0; }, 1500);
+      if (logoClickCount >= 3) {
+        logoClickCount = 0;
+        toggleAdminLoginModal(true);
+      }
+    }
+
+    function triggerSecretAdmin() {
+      if (isAdminLoggedIn) openAdminDashboard('products');
+      else toggleAdminLoginModal(true);
+    }
+
+    window.addEventListener('keydown', (e) => {
+      if (
+        (e.ctrlKey && e.altKey && (e.key === 'a' || e.key === 'A' || e.key === 'ش')) ||
+        (e.ctrlKey && e.shiftKey && (e.key === 'h' || e.key === 'H' || e.key === 'ا'))
+      ) {
+        e.preventDefault();
+        triggerSecretAdmin();
+      }
+      if (e.key === 'Escape') {
+        toggleAdminLoginModal(false);
+        closeAdminDashboard();
+        const drawer = document.getElementById('cartDrawerOverlay');
+        if (!drawer.classList.contains('hidden')) toggleCartDrawer();
+      }
+    });
+
+    function syncSettingsUI() {
+      document.getElementById('displayStoreName').innerText = storeSettings.storeName;
+      document.getElementById('footerStoreName').innerText = storeSettings.storeName;
+      document.getElementById('displayStorePhone').innerText = `الخط الساخن: ${storeSettings.phone}`;
+      document.getElementById('footerPhone').innerText = storeSettings.phone;
+
+      document.getElementById('settingStoreName').value = storeSettings.storeName;
+      document.getElementById('settingStorePhone').value = storeSettings.phone;
+      document.getElementById('settingWhatsappNumber').value = storeSettings.whatsappNumber;
+      document.getElementById('settingAdminPin').value = storeSettings.adminPin;
+
+      const topBar = document.getElementById('adminTopBar');
+      const addDishBtn = document.getElementById('adminAddDishBtn');
+      const addGrocBtn = document.getElementById('adminAddGroceryBtn');
+
+      if (isAdminLoggedIn) {
+        topBar.classList.remove('hidden');
+        addDishBtn.classList.remove('hidden');
+        addGrocBtn.classList.remove('hidden');
+      } else {
+        topBar.classList.add('hidden');
+        addDishBtn.classList.add('hidden');
+        addGrocBtn.classList.add('hidden');
+      }
+    }
+
+    function renderDishes() {
+      const dishes = products.filter(p => p.category === 'dishes');
+      const grid = document.getElementById('preparedDishesGrid');
+      
+      grid.innerHTML = dishes.map(dish => `
+        <div class="bg-white border ${dish.inStock ? 'border-stone-200' : 'border-red-200 opacity-75'} rounded-2xl p-4 flex flex-col justify-between hover:shadow-lg transition-all relative">
+          ${!dish.inStock ? '<span class="absolute top-2 left-2 bg-red-600 text-white text-[10px] font-bold px-2 py-0.5 rounded-md">نفد مؤقتاً</span>' : ''}
+          <div>
+            <div class="flex items-start justify-between gap-2 mb-2">
+              <span class="text-3xl p-2 bg-amber-50 rounded-2xl">${esc(dish.emoji || '🥗')}</span>
+              <div class="text-left">
+                <span class="bg-amber-100 text-amber-800 text-xs font-black px-2.5 py-1 rounded-xl font-mono block">${esc(dish.price)} ج.م</span>
+                <span class="text-[10px] text-stone-400 mt-0.5 block">${esc(dish.unit || 'طبق')}</span>
+              </div>
+            </div>
+            <h4 class="font-black text-stone-900 text-sm mb-1">${esc(dish.name)}</h4>
+            <p class="text-xs text-stone-500 leading-relaxed mb-3">${esc(dish.desc || '')}</p>
+          </div>
+          <div class="space-y-2">
+            ${dish.inStock ? `
+              <button onclick="addToCart('${esc(dish.id)}')" class="w-full bg-amber-600 hover:bg-amber-700 text-white font-bold py-2 rounded-xl text-xs transition-colors flex items-center justify-center gap-1.5 cursor-pointer">
+                <span>+</span> <span>إضافة للطلب</span>
+              </button>
+            ` : `
+              <button disabled class="w-full bg-stone-100 text-stone-400 font-bold py-2 rounded-xl text-xs cursor-not-allowed">
+                غير متوفر حالياً
+              </button>
+            `}
+            ${isAdminLoggedIn ? `
+              <div class="pt-2 border-t border-stone-100 flex items-center gap-1.5">
+                <button onclick="quickEditPrice('${esc(dish.id)}')" class="flex-1 bg-stone-100 hover:bg-amber-100 text-amber-900 text-[11px] font-bold py-1 rounded-lg transition cursor-pointer">✏️ تعديل السعر</button>
+                <button onclick="toggleProductStock('${esc(dish.id)}')" class="text-[11px] px-2 py-1 rounded-lg font-bold cursor-pointer ${dish.inStock ? 'bg-amber-50 text-amber-800' : 'bg-emerald-50 text-emerald-800'}">${dish.inStock ? 'إيقاف' : 'إتاحة'}</button>
+                <button onclick="deleteProduct('${esc(dish.id)}')" class="text-red-500 hover:bg-red-50 p-1 rounded-lg cursor-pointer" title="حذف">🗑️</button>
+              </div>
+            ` : ''}
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function renderGrocery(items = null) {
+      const groc = items || products.filter(p => p.category === 'grocery');
+      const grid = document.getElementById('groceryGrid');
+
+      grid.innerHTML = groc.map(item => `
+        <div class="bg-white border ${item.inStock ? 'border-stone-200 hover:border-amber-400' : 'border-red-200 opacity-75'} rounded-2xl p-3 flex flex-col justify-between transition-all">
+          <div>
+            <div class="flex items-center justify-between mb-1.5">
+              <span class="text-2xl">${esc(item.emoji || '🧀')}</span>
+              <span class="text-xs font-black text-amber-700">${esc(item.price)} ج.م</span>
+            </div>
+            <h5 class="font-bold text-stone-900 text-xs line-clamp-1 mb-0.5">${esc(item.name)}</h5>
+            <span class="text-[10px] text-stone-400 block mb-2">${esc(item.unit || 'قطعة')}</span>
+          </div>
+          <div class="space-y-1">
+            ${item.inStock ? `
+              <button onclick="addToCart('${esc(item.id)}')" class="w-full bg-stone-100 hover:bg-amber-600 hover:text-white text-stone-800 font-bold py-1.5 rounded-lg text-xs transition-colors cursor-pointer">+ إضافة</button>
+            ` : `
+              <button disabled class="w-full bg-stone-100 text-stone-400 font-bold py-1.5 rounded-lg text-xs cursor-not-allowed">نفد</button>
+            `}
+            ${isAdminLoggedIn ? `
+              <div class="flex items-center justify-between pt-1 border-t border-stone-100 text-[10px]">
+                <button onclick="quickEditPrice('${esc(item.id)}')" class="text-amber-700 font-bold hover:underline cursor-pointer">تعديل السعر</button>
+                <button onclick="deleteProduct('${esc(item.id)}')" class="text-red-500 hover:underline cursor-pointer">حذف</button>
+              </div>
+            ` : ''}
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function filterGrocery() {
+      const query = document.getElementById('grocerySearchInput').value.toLowerCase().trim();
+      const allGrocery = products.filter(p => p.category === 'grocery');
+      const filtered = allGrocery.filter(item => item.name.toLowerCase().includes(query));
+      renderGrocery(filtered);
+    }
+
+    function addToCart(productId) {
+      const prod = products.find(p => p.id === productId);
+      if (!prod || !prod.inStock) return;
+      const existing = cart.find(i => i.id === productId);
+      if (existing) {
+        existing.qty += 1;
+        existing.price = prod.price;
+      } else {
+        cart.push({ id: prod.id, name: prod.name, price: prod.price, emoji: prod.emoji || '🛒', qty: 1 });
+      }
+      saveCartState();
+      updateCartUI();
+    }
+
+    function changeQty(productId, delta) {
+      const item = cart.find(i => i.id === productId);
+      if (!item) return;
+      item.qty += delta;
+      if (item.qty <= 0) cart = cart.filter(i => i.id !== productId);
+      saveCartState();
+      updateCartUI();
+    }
+
+    function saveCartState() {
+      try { localStorage.setItem('hh_cart', JSON.stringify(cart)); } catch (e) {}
+    }
+
+    function updateCartUI() {
+      const totalCount = cart.reduce((s, i) => s + i.qty, 0);
+      const totalPrice = cart.reduce((s, i) => s + (i.price * i.qty), 0);
+      
+      document.getElementById('cartBadgeCount').innerText = totalCount;
+      document.getElementById('drawerItemCountText').innerText = `${totalCount} صنف محدد`;
+      document.getElementById('cartGrandTotal').innerText = `${totalPrice} ج.م`;
+
+      const list = document.getElementById('cartItemsList');
+      if (cart.length === 0) {
+        list.innerHTML = `<div class="text-center py-12 text-stone-400 text-xs">سلة الطلبات فارغة حالياً</div>`;
+        return;
+      }
+      list.innerHTML = cart.map(item => `
+        <div class="flex items-center justify-between p-2.5 bg-stone-50 border border-stone-200 rounded-xl text-xs">
+          <div class="flex items-center gap-2">
+            <span class="text-xl">${esc(item.emoji)}</span>
+            <div>
+              <p class="font-bold text-stone-900">${esc(item.name)}</p>
+              <span class="text-[11px] text-stone-500">${esc(item.price)} ج.م</span>
+            </div>
+          </div>
+          <div class="flex items-center gap-2">
+            <button onclick="changeQty('${esc(item.id)}', -1)" class="w-6 h-6 bg-white border border-stone-300 rounded-md font-bold">-</button>
+            <span class="font-bold w-4 text-center">${esc(item.qty)}</span>
+            <button onclick="changeQty('${esc(item.id)}', 1)" class="w-6 h-6 bg-white border border-stone-300 rounded-md font-bold">+</button>
+            <span class="font-black text-amber-800 pr-1">${esc(item.price * item.qty)} ج.م</span>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function toggleCartDrawer() {
+      const overlay = document.getElementById('cartDrawerOverlay');
+      overlay.classList.toggle('hidden');
+      if (!overlay.classList.contains('hidden')) overlay.classList.add('flex');
+      else overlay.classList.remove('flex');
+    }
+
+    function toggleAdminLoginModal(show = null) {
+      const modal = document.getElementById('adminLoginModal');
+      const shouldShow = show === null ? modal.classList.contains('hidden') : show;
+      if (shouldShow) {
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+        setTimeout(() => document.getElementById('adminPinInput').focus(), 100);
+      } else {
+        modal.classList.add('hidden');
+        modal.classList.remove('flex');
+        document.getElementById('adminPinError').classList.add('hidden');
+        document.getElementById('adminPinInput').value = '';
+      }
+    }
+
+    function handleAdminLogin(e) {
+      e.preventDefault();
+      const enteredPin = document.getElementById('adminPinInput').value.trim();
+      if (enteredPin === storeSettings.adminPin) {
+        isAdminLoggedIn = true;
+        sessionStorage.setItem('hh_is_admin', 'true');
+        toggleAdminLoginModal(false);
+        syncSettingsUI();
+        renderDishes();
+        renderGrocery();
+        openAdminDashboard('products');
+      } else {
+        document.getElementById('adminPinError').classList.remove('hidden');
+      }
+    }
+
+    function adminLogout() {
+      isAdminLoggedIn = false;
+      sessionStorage.removeItem('hh_is_admin');
+      closeAdminDashboard();
+      syncSettingsUI();
+      renderDishes();
+      renderGrocery();
+    }
+
+    function openAdminDashboard(defaultTab = 'products', preselectCategory = null) {
+      if (!isAdminLoggedIn) { toggleAdminLoginModal(true); return; }
+      const modal = document.getElementById('adminDashboardModal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+      switchAdminTab(defaultTab);
+      renderAdminProductsTable();
+      renderAdminPaymentsList();
+      if (preselectCategory) document.getElementById('newProdCategory').value = preselectCategory;
+    }
+
+    function closeAdminDashboard() {
+      const modal = document.getElementById('adminDashboardModal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+
+    function switchAdminTab(tabName) {
+      ['products', 'add', 'payments', 'settings'].forEach(t => {
+        const btn = document.getElementById(`tabBtn-${t}`);
+        const content = document.getElementById(`adminTabContent-${t}`);
+        if (t === tabName) {
+          btn.className = 'px-4 py-2 rounded-t-xl bg-white text-stone-900 border-t-2 border-amber-600 shadow-xs font-bold cursor-pointer';
+          content.classList.remove('hidden');
+        } else {
+          btn.className = 'px-4 py-2 rounded-t-xl text-stone-500 hover:text-stone-900 font-bold cursor-pointer';
+          content.classList.add('hidden');
+        }
+      });
+    }
+
+    function renderAdminProductsTable(items = null) {
+      const list = items || (currentAdminFilter
+        ? products.filter(p => p.name.toLowerCase().includes(currentAdminFilter))
+        : products);
+      document.getElementById('totalAdminItemsCount').innerText = products.length;
+      const tbody = document.getElementById('adminProductsTableBody');
+      tbody.innerHTML = list.map(p => `
+        <tr class="hover:bg-amber-50/40 transition">
+          <td class="p-3 font-bold text-stone-900 flex items-center gap-2">
+            <span class="text-xl">${esc(p.emoji || '📦')}</span>
+            <div>
+              <p>${esc(p.name)}</p>
+              <span class="text-[10px] text-stone-400">${esc(p.unit || '')}</span>
+            </div>
+          </td>
+          <td class="p-3 text-stone-600">${p.category === 'dishes' ? '🥗 وجبات حمدي' : '🧀 بقالة وألبان'}</td>
+          <td class="p-3">
+            <div class="flex items-center gap-1">
+              <input type="number" id="priceInput-${esc(p.id)}" value="${esc(p.price)}" class="w-20 border border-stone-300 rounded-lg px-2 py-1 font-mono font-bold text-stone-900 text-xs">
+              <button onclick="saveSinglePrice('${esc(p.id)}')" class="bg-amber-600 hover:bg-amber-700 text-white px-2 py-1 rounded-lg font-bold text-[11px] transition cursor-pointer">حفظ</button>
+            </div>
+          </td>
+          <td class="p-3">
+            <button onclick="toggleProductStock('${esc(p.id)}')" class="px-2.5 py-1 rounded-full text-[10px] font-bold cursor-pointer ${p.inStock ? 'bg-emerald-100 text-emerald-800' : 'bg-red-100 text-red-800'}">
+              ${p.inStock ? '✓ متوفر' : '✕ نفد'}
+            </button>
+          </td>
+          <td class="p-3 text-center">
+            <button onclick="deleteProduct('${esc(p.id)}')" class="text-red-600 hover:bg-red-50 px-2 py-1 rounded-lg text-xs font-bold transition cursor-pointer">حذف</button>
+          </td>
+        </tr>
+      `).join('');
+    }
+
+    function filterAdminProductsTable() {
+      currentAdminFilter = document.getElementById('adminSearchInput').value.toLowerCase().trim();
+      renderAdminProductsTable();
+    }
+
+    function saveSinglePrice(productId) {
+      const input = document.getElementById(`priceInput-${productId}`);
+      const newPrice = parseFloat(input.value);
+      if (isNaN(newPrice) || newPrice < 0) { alert('يرجى كتابة سعر صحيح!'); return; }
+      const prod = products.find(p => p.id === productId);
+      if (prod) {
+        prod.price = newPrice;
+        const cartItem = cart.find(i => i.id === productId);
+        if (cartItem) cartItem.price = newPrice;
+        saveProductsState();
+        saveCartState();
+        renderDishes();
+        renderGrocery();
+        updateCartUI();
+        renderAdminProductsTable();
+        alert(`تم تحديث سعر "${prod.name}" إلى ${newPrice} ج.م بنجاح!`);
+      }
+    }
+
+    function quickEditPrice(productId) {
+      const prod = products.find(p => p.id === productId);
+      if (!prod) return;
+      const current = prod.price;
+      const promptVal = prompt(`أدخل السعر الجديد لـ "${prod.name}" (ج.م):`, current);
+      if (promptVal !== null) {
+        const parsed = parseFloat(promptVal);
+        if (!isNaN(parsed) && parsed >= 0) {
+          prod.price = parsed;
+          const cartItem = cart.find(i => i.id === productId);
+          if (cartItem) cartItem.price = parsed;
+          saveProductsState();
+          saveCartState();
+          renderDishes();
+          renderGrocery();
+          updateCartUI();
+          if (!document.getElementById('adminDashboardModal').classList.contains('hidden')) renderAdminProductsTable();
+        }
+      }
+    }
+
+    function toggleProductStock(productId) {
+      const prod = products.find(p => p.id === productId);
+      if (prod) {
+        prod.inStock = !prod.inStock;
+        saveProductsState();
+        renderDishes();
+        renderGrocery();
+        renderAdminProductsTable();
+      }
+    }
+
+    function deleteProduct(productId) {
+      const prod = products.find(p => p.id === productId);
+      if (!prod) return;
+      if (confirm(`هل أنت متأكد من حذف "${prod.name}" نهائياً من الموقع؟`)) {
+        products = products.filter(p => p.id !== productId);
+        cart = cart.filter(i => i.id !== productId);
+        saveProductsState();
+        saveCartState();
+        renderDishes();
+        renderGrocery();
+        renderAdminProductsTable();
+        updateCartUI();
+      }
+    }
+
+    function saveNewProductFromAdmin() {
+      const name = document.getElementById('newProdName').value.trim();
+      const price = parseFloat(document.getElementById('newProdPrice').value);
+      const category = document.getElementById('newProdCategory').value;
+      const unit = document.getElementById('newProdUnit').value.trim() || (category === 'dishes' ? 'طبق' : 'كيلو');
+      const emoji = document.getElementById('newProdEmoji').value.trim() || '🥗';
+      const desc = document.getElementById('newProdDesc').value.trim();
+
+      if (!name) { alert('يرجى إدخال اسم السلعة!'); return; }
+      if (isNaN(price) || price <= 0) { alert('يرجى إدخال سعر صحيح!'); return; }
+
+      const newId = 'prod_' + Date.now();
+      products.unshift({ id: newId, name, price, category, unit, emoji, desc, inStock: true });
+      saveProductsState();
+
+      document.getElementById('newProdName').value = '';
+      document.getElementById('newProdPrice').value = '';
+      document.getElementById('newProdDesc').value = '';
+
+      renderDishes();
+      renderGrocery();
+      renderAdminProductsTable();
+      switchAdminTab('products');
+      alert(`تمت إضافة "${name}" بنجاح!`);
+    }
+
+    function resetAllProductsToDefaults() {
+      if (confirm('هل تريد استعادة قائمة الأصناف والأسعار الأصلية كما كانت أول مرة؟')) {
+        products = [...INITIAL_DISHES, ...INITIAL_GROCERY];
+        saveProductsState();
+        renderDishes();
+        renderGrocery();
+        renderAdminProductsTable();
+        alert('تمت استعادة الأصناف والأسعار الأصلية بنجاح.');
+      }
+    }
+
+    function saveProductsState() {
+      try {
+        localStorage.setItem('hh_products', JSON.stringify(products));
+        localStorage.setItem('hh_version', DATA_VERSION);
+      } catch (e) {}
+    }
+
+    function renderAdminPaymentsList() {
+      const container = document.getElementById('adminPaymentMethodsList');
+      container.innerHTML = paymentMethods.map((pm, idx) => `
+        <div class="border border-stone-200 rounded-xl p-3 bg-stone-50 space-y-2">
+          <div class="flex items-center justify-between">
+            <span class="font-bold text-stone-900">${esc(pm.name)}</span>
+            <label class="flex items-center gap-1.5 cursor-pointer text-[11px]">
+              <input type="checkbox" id="pm_enabled_${idx}" ${pm.enabled ? 'checked' : ''} class="rounded text-amber-600">
+              <span>مفعل للزبائن</span>
+            </label>
+          </div>
+          <input type="text" id="pm_details_${idx}" value="${esc(pm.details)}" class="w-full border border-stone-300 rounded-lg px-2 py-1 text-xs" placeholder="بيانات التحويل أو رقم الحساب">
+        </div>
+      `).join('');
+    }
+
+    function savePaymentSettings() {
+      paymentMethods.forEach((pm, idx) => {
+        pm.enabled = document.getElementById(`pm_enabled_${idx}`).checked;
+        pm.details = document.getElementById(`pm_details_${idx}`).value.trim();
+      });
+      try { localStorage.setItem('hh_payments', JSON.stringify(paymentMethods)); } catch (e) {}
+      alert('تم حفظ طرق الدفع وبيانات التحويل بنجاح!');
+    }
+
+    function saveStoreSettingsFromAdmin() {
+      const name = document.getElementById('settingStoreName').value.trim();
+      const phone = document.getElementById('settingStorePhone').value.trim();
+      const whatsapp = document.getElementById('settingWhatsappNumber').value.trim();
+      const pin = document.getElementById('settingAdminPin').value.trim();
+
+      if (!pin) { alert('رمز PIN لا يمكن أن يكون فارغاً!'); return; }
+
+      storeSettings = {
+        storeName: name || storeSettings.storeName,
+        phone: phone || storeSettings.phone,
+        whatsappNumber: whatsapp || storeSettings.whatsappNumber,
+        adminPin: pin,
+        domain: 'habashhamdi.com'
+      };
+
+      try { localStorage.setItem('hh_settings', JSON.stringify(storeSettings)); } catch (e) {}
+      syncSettingsUI();
+      alert('تم حفظ إعدادات المحل ورمز PIN الجديد بنجاح!');
+    }
+
+    function sendOrderViaWhatsApp() {
+      if (cart.length === 0) { alert('برجاء إضافة سلع أو وجبات إلى السلة أولاً!'); return; }
+      const name = document.getElementById('orderCustomerName').value.trim() || 'عميل المحل';
+      const phone = document.getElementById('orderCustomerPhone').value.trim() || 'غير مسجل';
+      const address = document.getElementById('orderCustomerAddress').value.trim() || 'استلام من المحل';
+      const total = cart.reduce((s, i) => s + (i.price * i.qty), 0);
+
+      let text = `*طلب جديد من موقع ${storeSettings.storeName}* 🥗🛒\n`;
+      text += `🌐 ${storeSettings.domain}\n`;
+      text += `الاسم: ${name}\n`;
+      text += `الهاتف: ${phone}\n`;
+      text += `العنوان: ${address}\n`;
+      text += `-------------------------\n`;
+      text += `*قائمة الطلبات:*\n`;
+      cart.forEach((i, idx) => {
+        text += `${idx + 1}. ${i.name} (العدد: ${i.qty}) = ${i.price * i.qty} ج.م\n`;
+      });
+      text += `-------------------------\n`;
+      text += `*الإجمالي الكلي:* ${total} ج.م\n`;
+      text += `شكراً لاختياركم ${storeSettings.storeName}! 🌟`;
+
+      const url = `https://wa.me/${storeSettings.whatsappNumber}?text=${encodeURIComponent(text)}`;
+      window.open(url, '_blank');
+
+      setTimeout(() => {
+        cart = [];
+        saveCartState();
+        updateCartUI();
+        toggleCartDrawer();
+      }, 800);
+    }
+
+    document.getElementById('cartDrawerOverlay').addEventListener('click', function(e) {
+      if (e.target === this) toggleCartDrawer();
+    });
+    document.getElementById('adminLoginModal').addEventListener('click', function(e) {
+      if (e.target === this) toggleAdminLoginModal(false);
+    });
+    document.getElementById('adminDashboardModal').addEventListener('click', function(e) {
+      if (e.target === this) closeAdminDashboard();
+    });
+
+    syncSettingsUI();
+    renderDishes();
+    renderGrocery();
+    updateCartUI();
+    checkSecretUrlTrigger();
+  </script>
+</body>
+</html>
